@@ -28,7 +28,7 @@ Components são partes reutilizaveis da interface.
 
 Ex.:
 
-funcion Header() {
+function Header() {
     return (
         <header>
             <h1>DevPatterns</h1>
@@ -73,7 +73,7 @@ function Footer ({ texto }) {
 
 ### Props.children
 
-children é uma prop especial que apresenta o conteúdo colocando dentro de um componente.
+children é uma prop especial que representa o conteúdo colocado dentro de um componente.
 
 Ex.:
 
@@ -120,6 +120,22 @@ function Card({ children }) {
 
 Isso permite reutilizar o mesmo componente com conteúdos diferentes.
 
+### Componentes reutilizáveis/Reusable Components
+
+Um componente reutilizavel pode ser utilizado várias vezes, recebendo informações diferentes através de props e children.
+
+Ex.:
+
+<Card title="Props">
+    <p>Data sent to components</p>
+</Card>
+
+<Card title="Children">
+    <p>Content passed as children</p>
+</Card>
+
+---------------------------------
+
 ## Como executar o projeto
 - npm install (instalar as dependências)
 - npm run dev
@@ -133,7 +149,7 @@ Progresso
 - [x] props.children
 - [x] Composição
  --
-- [ ]Componentes reutilizáveis
+- [x]Componentes reutilizáveis/Reusable components
 - [ ] Compound Components
 - [ ] React Router
 - [ ] Design Patterns
